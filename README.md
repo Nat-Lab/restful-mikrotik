@@ -58,3 +58,9 @@ To query with condition, `POST` a JSON object:
 ```
 
 For more information about query/parameter, see [mikrotik wiki](http://wiki.mikrotik.com/wiki/Manual:API#API_attribute_word).
+
+### TODO
+
+- TLS fix? 
+
+
