@@ -1,0 +1,22 @@
+{
+  "name": "restful-mikrotik",
+  "version": "0.0.1",
+  "description": "A restful API for MikroTik RouterOS.",
+  "main": "lib/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nat-Lab/restful-mikrotik.git"
+  },
+  "author": "NAT <nat@nat.moe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nat-Lab/restful-mikrotik/issues"
+  },
+  "homepage": "https://github.com/Nat-Lab/restful-mikrotik#readme",
+  "dependencies": {
+    "mikronode-ng": "^1.0.10"
+  }
+}
