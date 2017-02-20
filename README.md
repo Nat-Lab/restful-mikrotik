@@ -3,6 +3,12 @@ restful-mikrotik
 
 A Restful API wrapper for [mikronode](https://github.com/Trakkasure/mikronode). 
 
+usage: 
+
+```
+% npm install restful-mikrotik
+```
+
 ```Javascript
 var RestfulMikrotik = require('restful-mikrotik');
 var api_server = new RestfulMikrotik({
