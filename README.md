@@ -1,7 +1,7 @@
 restful-mikrotik
 ---
 
-A Restful API wrapper for [mikronode](https://github.com/Trakkasure/mikronode). 
+A Restful API server for MikroTik RouterOS.
 
 usage: 
 
@@ -23,15 +23,15 @@ var api_server = new RestfulMikrotik({
 ```
 Constructor of `RestfulMikrotik` accept an object:
 
-properties|type|default|required?|description
+properties|type|default|description
 :--|:--|:--|:--|:--
-host|str||true|Router address
-user|str||true|Router username
-password|str||ture|Router password
-port|int|8728|false|Router API port
-tls|bool/object|false|false|See [mikronode document](http://trakkasure.github.io/mikronode/mikronode.Connection.html) for more infomation.
-listen_port|int|8080|false|REST API server listen port
-listen_host|str|127.0.0.1|false|REST API server listen address
+host|str||Router address
+user|str||Router username
+password|str||Router password
+port|int|8728|Router API port
+tls|bool/object|false|When true or object, tls will be enabled. See [mikronode document](http://trakkasure.github.io/mikronode/mikronode.Connection.html) for more infomation
+listen_port|int|8080|REST API server listen port
+listen_host|str|127.0.0.1|REST API server listen address
 
 
 To query, send a `GET` request to API server:  
@@ -61,6 +61,6 @@ For more information about query/parameter, see [mikrotik wiki](http://wiki.mikr
 
 ### TODO
 
-- TLS fix? 
+- (Real) TLS fix? - For whatever reason, connection using tls close itself after channel closed, maybe problem with `mikronode`?
 
 
